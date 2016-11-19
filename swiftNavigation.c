@@ -4,7 +4,7 @@
 int main(void){
 	unsigned int n,i;
 	unsigned long long int a=1,b=1;
-	bool flag=0;
+	unsigned int flag=0;
 	
 	unsigned int readNumber(void);	//function to get the user input
 
@@ -66,7 +66,7 @@ int main(void){
 unsigned int readNumber(){
 	unsigned int n;
 	printf("\nEnter number (n>0):");
-	scanf("%lu",&n);
+	scanf("%u",&n);
 	if(n>0)
 		return n;
 	else
