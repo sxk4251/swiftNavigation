@@ -16,12 +16,12 @@ int main(void){
 	A[0]=a;
 	if(n==1) // If entered 1, print the first number & exit
 	{   
-		printf("%llu",a);
+		printf("%llu\n",a);
 		return 0;
 	}
 	else if(n==2) // If entered 2, print the second number & exit
 	{
-		printf("%llu",b);
+		printf("%llu\n",b);
 		A[1]=b;
 		return 0;
 	}
@@ -44,29 +44,29 @@ int main(void){
 		}
 		}
 		if(!flag){
-			printf("\nBuzzFizz");
+			printf("\nBuzzFizz\n");
 			return 0;
 		}
 
 	}
 	
 	if(a%15==0)
-		printf("\nFizzBuzz");
+		printf("\nFizzBuzz\n");
 	else if(a%5==0)
-		printf("\nFizz");
+		printf("\nFizz\n");
 	else if(a%3==0)
-		printf("\nBuzz");
+		printf("\nBuzz\n");
 	else if(flag)	//If not a prime and not divisible by 3, 5, and 15
-		printf("\n%llu",a);
+		printf("\n%llu\n",a);
 	
 
 	return 0;
 }
 
 unsigned int readNumber(){
-	unsigned int n;
+	int n;
 	printf("\nEnter number (n>0):");
-	scanf("%u",&n);
+	scanf("%d",&n);
 	if(n>0)
 		return n;
 	else
